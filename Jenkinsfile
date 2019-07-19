@@ -5,7 +5,9 @@ pipeline {
 		stage('Prep') {
 
 			steps {
-				echo "charminar...Prep"
+				deleteDir()
+				git clone https://github.com/PrabhakarPrasad1234/Charminar.git
+				sh "python -version"
 			}
 		}
 		stage('Build') {
