@@ -7,7 +7,7 @@ pipeline {
 			steps {
 				deleteDir()
 				git 'https://github.com/PrabhakarPrasad1234/Charminar.git'
-				sh "python -version"
+				sh "python --version"
 			}
 		}
 		stage('Build') {
