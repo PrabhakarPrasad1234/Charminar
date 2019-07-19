@@ -10,6 +10,7 @@ timestamps()
 }
 stages {
 stage('clean') {
+sh "echo 'charminar'" 
 steps {
 deleteDir()
 sendNotifications 'STARTED'
