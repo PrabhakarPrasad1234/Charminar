@@ -25,6 +25,7 @@ pipeline {
 		stage('Package') {
 
 			steps {
+				sh "docker build -t charminardocker ."
 				echo "charminar...Package"
 			}
 		}
