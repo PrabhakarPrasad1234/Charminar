@@ -6,7 +6,7 @@ pipeline {
 
 			steps {
 				deleteDir()
-				git clone 'https://github.com/PrabhakarPrasad1234/Charminar.git'
+				git 'https://github.com/PrabhakarPrasad1234/Charminar.git'
 				sh "python -version"
 			}
 		}
