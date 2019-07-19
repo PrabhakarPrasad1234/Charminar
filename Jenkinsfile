@@ -1,9 +1,21 @@
 pipeline {
+    agent any
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'echo charminar'
+                echo 'Building charminar..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
-}
+} 
