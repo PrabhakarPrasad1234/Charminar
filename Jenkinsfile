@@ -25,7 +25,6 @@ pipeline {
 		stage('Package') {
 
 			steps {
-				sh "docker build -t jenkins-master ."
 				echo "charminar...Package"
 			}
 		}
