@@ -5,7 +5,8 @@ pipeline {
 		stage('Prep') {
 
 			steps {
-				git clone https://github.com/PrabhakarPrasad1234/Charminar.git
+				deleteDir()
+				git clone 'https://github.com/PrabhakarPrasad1234/Charminar.git'
 				sh "python -version"
 			}
 		}
